@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <form action="./result.html" method="get">
+    <fieldset>
+        <legend>회원가입</legend>
+        <div>
+        <label for="username">이름:</label>
+        <input type="text" name="username" placeholder="이름" autocomplete="on" required>
+        </div>
+
+        <div>
+        <label for="ID">ID:</label>
+        <input type="text" name="ID" placeholder="아이디" required>
+        </div>
+
+        <div>
+            <label for="password">비밀번호:</label>
+            <input type="password" name="password" placeholder="비밀번호" required>
+            </div>
+        
+        <div>
+            <label>전화번호:</label>
+                    <select name="type">
+                    <option value="1">010</option> 
+                    <option value="1">011</option> 
+                    <option value="1">018</option> 
+                    <select name="type">- <input type="text"> - <input type="text">
+        </div>
+
+
+
+        <div>
+        <label for="age">나이:</label>
+        <input type="number" name="age" min="0" max="100" step="10" autocomplete="off">
+        </div>
+
+        <label for="summary">가입 동기</label>
+        <div>
+        <textarea name="summary" rows="10" cols="10"></textarea>
+        </div>
+       
+
+        <div>
+            <label>성별:</label>
+            <input type="checkbox" name="type_2" value="1day">
+            <label for="type_2">남성</label>
+
+            <input type="checkbox" name="type_3" value="3day">
+            <label for="type_3">여성</label>
+        </div>
+       
+        <div>
+            <button type="submit">submit</button>
+        </div>
+    </fieldset>
+    </form>
+</body>
+</html>
